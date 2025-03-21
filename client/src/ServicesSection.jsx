@@ -3,17 +3,17 @@ import { motion, useInView } from 'framer-motion';
 
 export default function ServicesSection() {
   const services = [
-    { title: "Invasive Species Removal", description: "Removing unwanted and harmful plant species to promote native growth and ecosystem health." },
-    { title: "Tree and Plant Identification", description: "Accurately identifying various trees and plants to develop effective maintenance plans." },
-    { title: "Native Plantings and Maintenance", description: "Establishing and maintaining native plants to enhance biodiversity and natural beauty." },
-    { title: "Mowing, Pruning, and Brush Removal", description: "Keeping landscapes neat and healthy through regular mowing, pruning, and brush clearing." },
-    { title: "Tree Planting", description: "Planting new trees to restore natural areas and improve landscape aesthetics." },
-    { title: "Building Food Plots for Wildlife", description: "Creating designated areas to support wildlife with food and shelter." },
-    { title: "Wildlife Damage Management", description: "Addressing issues caused by wildlife and implementing solutions to minimize damage." }
+    { title: "Invasive Species Removal", description: "Removing unwanted and harmful plant species to promote native growth and ecosystem health.", emoji: "🌱" },
+    { title: "Tree and Plant Identification", description: "Accurately identifying various trees and plants to develop effective maintenance plans.", emoji: "🌳" },
+    { title: "Native Plantings and Maintenance", description: "Establishing and maintaining native plants to enhance biodiversity and natural beauty.", emoji: "🌼" },
+    { title: "Mowing, Pruning, and Brush Removal", description: "Keeping landscapes neat and healthy through regular mowing, pruning, and brush clearing.", emoji: "✂️" },
+    { title: "Tree Planting", description: "Planting new trees to restore natural areas and improve landscape aesthetics.", emoji: "🌲" },
+    { title: "Building Food Plots for Wildlife", description: "Creating designated areas to support wildlife with food and shelter.", emoji: "🦌" },
+    { title: "Wildlife Damage Management", description: "Addressing issues caused by wildlife and implementing solutions to minimize damage.", emoji: "🦊" }
   ];
 
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: false, margin: '-100px' }); // Detects when it's in view with slight offset
+  const isInView = useInView(sectionRef, { once: false, margin: '-100px' });
 
   return (
     <section 
@@ -49,12 +49,12 @@ export default function ServicesSection() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: index * 0.15, ease: "easeOut" }}
             >
-              <div className="p-10 md:px-7 xl:px-10 rounded-[20px] bg-green-900 text-white shadow-md border border-gray-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 mb-8">
+              <div className="p-10 md:px-7 xl:px-10 rounded-[20px] bg-green-900 text-white shadow-md border border-gray-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 mb-8 flex flex-col items-center">
                 <div className="w-[70px] h-[70px] flex items-center justify-center bg-white rounded-2xl mb-8">
-                  <span className="text-green-900 text-2xl">SVG</span>
+                  <span className="text-3xl">{service.emoji}</span>
                 </div>
-                <h4 className="font-semibold text-xl mb-3">{service.title}</h4>
-                <p className="text-white">{service.description}</p>
+                <h4 className="font-semibold text-xl mb-3 text-center">{service.title}</h4>
+                <p className="text-white text-center">{service.description}</p>
               </div>
             </motion.div>
           ))}
