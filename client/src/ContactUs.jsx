@@ -21,7 +21,7 @@ export default function ContactUs() {
             title: "Location",
             description: "Based in Staunton, serving the Central Shenandoah Valley",
             detail: "Central Shenandoah Valley",
-            link: "https://goo.gl/maps/QcWzYETAh4FS3KTD7",
+            link: "https://www.google.com/maps/place/Shenandoah+Valley,+VA/",
             icon: "📍"
         }
     ];
