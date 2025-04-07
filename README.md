@@ -38,7 +38,7 @@ Welcome to the official web application for **Appalachian Resource Management**,
 lawncare-webapp/
 └── client/
     └── src/
-        ├── assets/               # Logos & images (brians_logo.png, image1.png - image6.png)
+        ├── assets/               # Logos & images (brians_logo.png, image1.png - image6.png, lawncare_website.PNG)
         ├── App.jsx               # Main app composition
         ├── main.jsx              # React root mount point
         ├── index.css             # Tailwind base styles and custom styles
