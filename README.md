@@ -33,12 +33,12 @@ Welcome to the official web application for **Appalachian Resource Management**,
 
 ---
 
-## 📁 Project Structure
 
+```bash
 lawncare-webapp/
 └── client/
     └── src/
-        ├── assets/               # Logos & images (brians_logo.png, image1.png - image6.png, lawncare_website.PNG)
+        ├── assets/               # Logos & images (brians_logo.png, image1.png - image6.png)
         ├── App.jsx               # Main app composition
         ├── main.jsx              # React root mount point
         ├── index.css             # Tailwind base styles and custom styles
@@ -48,7 +48,6 @@ lawncare-webapp/
         ├── WhyChoose.jsx         # "Why Choose Us" trust and value proposition section
         ├── Gallery.jsx           # Fully built photo showcase section
         └── ContactUs.jsx         # Final contact card section (location + contact info)
-
 🧪 Local Development
 Clone the project and get started:
 git clone https://github.com/yourusername/appalachian-resource-management.git
