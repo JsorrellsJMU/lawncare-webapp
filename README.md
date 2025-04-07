@@ -28,7 +28,7 @@ Welcome to the official web application for **Appalachian Resource Management**,
 
 ## 📸 Preview
 
-![App Screenshot](./src/assets/brians_logo.png)  
+![App Screenshot](lawncare-webapp/client/src/assets/lawncare_website.PNG)  
 > A clean, fast, and professional frontend tailored for land care services.
 
 ---
